@@ -1,4 +1,4 @@
 #!/bin/bash -x
 
-singleDigit=$((RANDOM%9))
+singleDigit=$((1+RANDOM%3))
 echo "$singleDigit"

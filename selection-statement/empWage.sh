@@ -1,15 +1,17 @@
 #!/bin/bash -x
 
-empCheck=$((RANDOM%2))
-isPresent=1
-if [ $empCheck -eq $isPresent ]
-
+empCheck=$((RANDOM%3))
+isFullTime=1
+isPartTime=2
+empRatePerHr=20
+if [ $empCheck -eq $isFullTime ]
 then 
- EmpRatePerHr=20
 	empHrs=8
-	salary=$(($empHrs*$EmpRatePerHr))
-	echo $salary
+elif [ $empCheck -eq $isPartTime ]
+	then
+	empHrs=4
 else
-	echo salary is 0
+	empHrs=0
 
 fi
+Salary=$(($empHrs*$empRatePerHr))

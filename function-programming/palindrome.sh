@@ -6,8 +6,7 @@ s=0
 rev=" "
 temp=$num
 
-
-function palindrome_check()
+function palindrome_check1()
 {
 while [ $num -gt '0' ]
 do
@@ -17,13 +16,15 @@ do
 done
 if [ $temp -eq $rev ]
 then
-   echo $temp "is a palindrome"
+      echo $temp "is a palindrome"
 else
    echo $temp "is not a palindrome"
 fi
 }
-palindrome_check
+palindrome_check1
 
-num=$num2
+s=0
+rev=" "
 temp=$num2
-palindrome_check
+num=$num2
+palindrome_check1

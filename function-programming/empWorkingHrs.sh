@@ -3,7 +3,7 @@
 IS_FULLTIME=1
 IS_PARTTIME=2
 EMP_RATE_PER_HR=20
-Num_of_working_days=15
+num_of_working_days=15
 max_hrs_in_month=20
 
 #variable
@@ -29,6 +29,6 @@ do
 	((totalworkingdays++))
 	empCheck=$((RANDOM%3))
 	empHrs=$( getworkingHrs $empCheck)
-	
+	totalEmpHrs
 done
 

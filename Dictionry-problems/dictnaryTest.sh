@@ -1,4 +1,4 @@
-o#!/bin/bash -x
+#!/bin/bash -x
 
 declare -A sounds
 
